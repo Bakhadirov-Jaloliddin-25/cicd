@@ -16,7 +16,6 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
         shell: bash
-
       - name: Serverga deploy qilish
         env:
           HOST: ${{ secrets.HOST }}
